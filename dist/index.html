@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-E31HLF8T41"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-E31HLF8T41");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the cutting-edge web development and design expertise of Asad. This portfolio showcases innovative projects, seamless user experiences, and dynamic animations, crafted with modern technologies like GSAP, Locomotive Scroll, and more. Explore creativity in action!"
+    />
+    <meta
+      property="og:title"
+      content="Asad.Code | Creative Web Developer & Designer"
+    />
+    <meta
+      property="og:description"
+      content="Explore Asad's creative web development portfolio, filled with cutting-edge projects and innovative design solutions that push boundaries."
+    />
+    <meta property="og:url" content="https://asadcode.vercel.app/" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image"
+      content="https://asadcode.vercel.app/assets/metaImage.webp"
+    />
+    <meta
+      name="keywords"
+      content="web development, web design, frontend development, backend development, portfolio, asad.code"
+    />
+    <meta name="author" content="Asad Ali" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://asadcode.vercel.app/" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link
+      rel="preload"
+      href="./fonts/matter-light.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      href="./fonts/ppmori.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      href="./fonts/gallery-modern-regular.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      href="./fonts/Rejouice-Headline.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicons/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Asad.Code | Web Developer & Designer Portfolio</title>
+  </head>
+  <body class="w-full text-[#FFFFFF] bg-[#141517] relative overflow-x-hidden">
+    <!-- Preloader -->
+    <div
+      id="Preloader"
+      class="text-[#FFFFFF] flex flex-col bg-[#141517] w-full h-[100vh] justify-center z-[7000] absolute top-0 overflow-hidden font-light font-mlight select-none"
+    >
+      <div id="We" class="relative left-[20%] overflow-hidden">
+        <h1 class="text-[10vw] leading-[10vw] uppercase translate-y-[100%]">
+          We
+        </h1>
+      </div>
+      <div id="Create" class="relative left-[12%] overflow-hidden">
+        <h1 class="text-[10vw] leading-[10vw] uppercase translate-y-[100%]">
+          Create
+        </h1>
+      </div>
+      <div
+        id="Memorable"
+        class="relative right-[-39%] font-[700] overflow-hidden"
+      >
+        <h1
+          class="text-[10vw] leading-[10vw] uppercase font-light translate-y-[100%]"
+        >
+          Memorable
+        </h1>
+      </div>
+      <div class="relative flex justify-between overflow-hidden">
+        <h1
+          id="Websites"
+          class="relative text-[10vw] leading-[10vw] uppercase translate-y-[100%] ml-[2vw]"
+        >
+          Websites<span class="text-[#E0FD60] relative animate-pulse">_</span>
+        </h1>
+        <h1
+          id="counter"
+          class="text-[10vw] leading-[10vw] text-[#E0FD60] font-bold font-gallery text-center relative mr-[7vw] translate-y-[100%]"
+        >
+          0%
+        </h1>
+      </div>
+    </div>
+
+    <!-- Navigation bar -->
+    <div class="absolute w-full overflow-hidden select-none">
+      <div
+        class="md:w-[50%] w-full navBAR bg-[#ffffff] text-[#000000] h-[100vh] fixed top-0 right-[-100%] z-[100] flex p-[8vw_10vw] md:p-[8vw_5vw] font-mlight"
+      >
+        <section
+          class="w-[35%] p-[1vw] md:flex hidden flex-col items-start gap-[2.5vw] opacity-1 navBAR2 z-[100] relative"
+        >
+          <h3 class="opacity-50">Social</h3>
+          <ul class="text-[1.4vw] flex flex-col gap-[1.1vw]">
+            <a
+              href="https://www.linkedin.com/in/asad-code"
+              class="overflow-hidden h-[2vw] project-ms navBarLinksMain1"
+            >
+              <div
+                class="h-fit overflow-hidden navBarLinks flex flex-col gap-[.5vw] z-[100] relative"
+              >
+                <li>LinkedIn</li>
+                <li>LinkedIn</li>
+              </div>
+            </a>
+            <a
+              href="https://github.com/asadc0de"
+              class="overflow-hidden h-[2vw] project-ms navBarLinksMain1"
+            >
+              <div
+                class="h-fit overflow-hidden navBarLinks flex flex-col gap-[.5vw]"
+              >
+                <li>GitHub</li>
+                <li>GitHub</li>
+              </div>
+            </a>
+            <a
+              href="https://wa.me/+923150676136?text=Hi%20i%20am%20ASAD%20your%20web%20developer.%20How%20can%20i%20help%20you%20today?"
+              class="overflow-hidden h-[2vw] project-ms navBarLinksMain1"
+            >
+              <div
+                class="h-fit overflow-hidden navBarLinks flex flex-col gap-[.5vw]"
+              >
+                <li>WhatsApp</li>
+                <li>WhatsApp</li>
+              </div>
+            </a>
+            <a
+              href="https://instagram.com/asad.code"
+              class="overflow-hidden h-[2vw] project-ms navBarLinksMain1"
+            >
+              <div
+                class="h-fit overflow-hidden navBarLinks flex flex-col gap-[.5vw]"
+              >
+                <li>Instagram</li>
+                <li>Instagram</li>
+              </div>
+            </a>
+            <a
+              href="https://www.facebook.com/asadmughal7424?mibextid=ZbWKwL"
+              class="overflow-hidden h-[2vw] project-ms navBarLinksMain1"
+            >
+              <div
+                class="h-fit overflow-hidden navBarLinks flex flex-col gap-[.5vw]"
+              >
+                <li>Facebook</li>
+                <li>Facebook</li>
+              </div>
+            </a>
+            <a
+              href="mailto:mughalasad449@gmail.com"
+              class="overflow-hidden h-[2vw] project-ms navBarLinksMain1"
+            >
+              <div
+                class="h-fit overflow-hidden navBarLinks flex flex-col gap-[.5vw]"
+              >
+                <li>Email</li>
+                <li>Email</li>
+              </div>
+            </a>
+          </ul>
+        </section>
+        <section
+          class="md:w-[65%] w-full p-[1vw] flex flex-col items-start gap-[15vw] md:gap-[2.5vw] opacity-1 navBAR2 relative md:mt-0 mt-[10vw] z-[100]"
+        >
+          <h3 class="opacity-50 md:mb-0 mb-[4vw]">Menu</h3>
+          <ul
+            class="md:text-[3.5vw] md:leading-[3.5vw] text-[13vw] leading-[10vw] flex flex-col md:gap-[.7vw] gap-[5vw]"
+          >
+            <a
+              href="./index.html"
+              class="overflow-hidden border-b-black border border-t-0 border-l-0 border-r-0 md:h-[3.8vw] h-[13vw] navBarLinksMain"
+            >
+              <div
+                class="md:translate-y-[2.5%] h-fit overflow-hidden navBarLinks flex flex-col md:gap-[.7vw] gap-[2.7vw]"
+              >
+                <li>What we do</li>
+                <li>What we do</li>
+              </div>
+            </a>
+            <a
+              href="./projects/projects.html"
+              class="overflow-hidden md:h-[3.8vw] h-[13vw] navBarLinksMain"
+            >
+              <div
+                class="translate-y-[2.5%] h-fit overflow-hidden navBarLinks flex flex-col md:gap-[.7vw] gap-[2.7vw]"
+              >
+                <li>Projects</li>
+                <li>Projects</li>
+              </div>
+            </a>
+            <a
+              href="./services/services.html"
+              class="overflow-hidden md:h-[3.8vw] h-[13vw] navBarLinksMain"
+            >
+              <div
+                class="translate-y-[2.5%] h-fit overflow-hidden navBarLinks flex flex-col md:gap-[.7vw] gap-[2.7vw]"
+              >
+                <li>Services</li>
+                <li>Services</li>
+              </div>
+            </a>
+            <a
+              href="./about/about.html"
+              class="overflow-hidden md:h-[3.8vw] h-[13vw] navBarLinksMain"
+            >
+              <div
+                class="translate-y-[2.5%] h-fit overflow-hidden navBarLinks flex flex-col md:gap-[.7vw] gap-[2.7vw] about"
+              >
+                <li>About us</li>
+                <li>About us</li>
+              </div>
+            </a>
+            <a
+              href="./contact/contact.html"
+              class="overflow-hidden md:h-[3.8vw] h-[13vw] navBarLinksMain"
+            >
+              <div
+                class="translate-y-[2.5%] h-fit overflow-hidden navBarLinks flex flex-col md:gap-[.7vw] gap-[2.7vw]"
+              >
+                <li>Contact</li>
+                <li>Contact</li>
+              </div>
+            </a>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- Menu Icon -->
+    <div
+      class="menuIcon opacity-0 fixed top-[40px] right-[3%] z-[1000] cursor-pointer p-[15px_20px] project-ms"
+    >
+      <div
+        class="icon-container flex justify-center items-center flex-col relative"
+      >
+        <div class="line w-[30px] h-[1.5px] bg-white absolute"></div>
+        <div class="line w-[30px] h-[1.5px] bg-white absolute top-[5px]"></div>
+      </div>
+    </div>
+
+    <div class="main">
+      <!-- Main Section -->
+      <section class="bg-[#141517] w-full relative">
+        <!-- NavBar -->
+        <nav
+          class="flex justify-between pl-[3%] pb-[6%] md:pt-[40px] pt-[50px] w-full font-head sm:text-[1.6rem] text-[1.3rem] font-semibold"
+        >
+          <!-- Name/Logo -->
+          <h4
+            class="font-mlight tracking-[1px] select-none project-ms md:text-[1.5vw] text-[20.8px] name opacity-0"
+          >
+            asad.code
+          </h4>
+        </nav>
+        <!-- Main Text -->
+        <div
+          data-scroll
+          data-scroll-speed="12"
+          class="m-[3vw] relative z-[30] select-none md:mt-0 mt-[15vw] mainSection"
+        >
+          <!-- Text + Animation -->
+          <div class="px-[1vw] font-mlight">
+            <div
+              class="md:flex md:flex-row flex flex-col md:gap-10 gap-[1vw] md:pb-0 pb-[1vw]"
+            >
+              <div
+                class="WE-2 overflow-hidden md:text-[10vw] md:leading-[10vw] text-[15vw] leading-[15vw]"
+              >
+                <h1>WE</h1>
+              </div>
+              <div id="animateme" class="scale-[1]">
+                <div
+                  class="overflow-hidden relative text-[#E0FD60] font-gallery border-[#E0FD60] border rounded-[8rem] md:px-[18.5vw] px-[30vw] md:py-[4.5vw] py-[6.5vw] w-fit after:w-full after:h-full after:bg-[#E0FD60] after:absolute after:left-0 after:bottom-[-100%] after:rounded-[50%] hover:after:bottom-[0%] hover:after:rounded-[0px] after:duration-500 after:z-[-10] after:ease-in-out z-[10] cursor-default group"
+                >
+                  <div
+                    class="absolute md:top-[1%] top-[-6%] left-[4.5%] md:group-hover:top-[-112%] group-hover:top-[-128%] duration-500"
+                  >
+                    <h1
+                      class="Create md:text-[10vw] md:leading-[10vw] text-[16vw] leading-[16vw]"
+                    >
+                      CREATE
+                    </h1>
+                    <h1
+                      class="md:text-[10vw] md:leading-[10vw] text-[16vw] leading-[16vw] text-[#121212]"
+                    >
+                      CREATE
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MEMORABLE-2 overflow-hidden md:text-[10vw] md:leading-[10vw] text-[15vw] leading-[15vw]"
+            >
+              <h1>MEMORABLE</h1>
+            </div>
+            <div
+              class="WEBSITES-2 overflow-hidden md:text-[10vw] md:leading-[10vw] text-[15vw] leading-[15vw]"
+            >
+              <h1><span class="animate-pulse">_</span>WEBSITES</h1>
+            </div>
+          </div>
+        </div>
+        <!-- Video + Animation + Text -->
+        <div
+          class="w-full flex items-end flex-col px-[5vw] pb-[10vw] md:pt-0 pt-[5vw]"
+        >
+          <!-- Video -->
+          <div
+            class="bg-[#121212] video-circle sm:w-[37vw] w-[50vw] sm:h-[40vw] h-[50vw] rounded-[50%] overflow-hidden z-20 transform md:translate-y-[-27%] translate-y-[20%] md:mb-0 mb-[30vw] mt-[3vw]"
+          >
+            <video loop autoplay muted class="object-cover w-full h-full">
+              <source src="./assets/mainVideo.webm" type="video/mp4" />
+            </video>
+          </div>
+          <!-- Text -->
+          <div
+            class="w-full text selection:text-[#E0FD60] selection:bg-transparent md:mb-0 mb-[15vw]"
+          >
+            <div id="videoText1" class="overflow-hidden">
+              <h1
+                class="sm:text-[4vw] sm:leading-[4.3vw] text-[8vw] leading-[8.5vw] font-mlight translate-y-[138%] rotate-[3deg]"
+              >
+                In my role as a digital specialist, I
+              </h1>
+            </div>
+            <div id="videoText2" class="overflow-hidden">
+              <h1
+                class="sm:text-[4vw] sm:leading-[4.3vw] text-[8vw] leading-[8.5vw] font-mlight translate-y-[130%] rotate-[3deg]"
+              >
+                create memorable and emotional
+              </h1>
+            </div>
+            <div id="videoText3" class="overflow-hidden">
+              <h1
+                class="sm:text-[4vw] sm:leading-[4.3vw] text-[8vw] leading-[8.5vw] font-mlight translate-y-[135%] rotate-[3deg]"
+              >
+                websites, digital experiences, and
+              </h1>
+            </div>
+            <div id="videoText4" class="overflow-hidden">
+              <h1
+                class="sm:text-[4vw] sm:leading-[4.3vw] text-[8vw] leading-[8.5vw] font-mlight translate-y-[133%] rotate-[3deg]"
+              >
+                epic design.
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Design Section -->
+      <section
+        class="w-full bg-[#8F8F8F] text-[#121212] md:py-[8vw] py-[15vw] overflow-hidden"
+      >
+        <!-- Text + Video -->
+        <div
+          class="w-full flex items-center justify-center gap-[4.5vw] select-none lg:mt-0 mt-[5vw] video-container"
+        >
+          <div class="flex gap-[4.5vw] items-center creative-design">
+            <div
+              class="uppercase md:text-[11vw] text-[18vw] md:leading-[11vw] leading-[18vw] font-mlight"
+            >
+              <h1>Creative</h1>
+              <h1 class="font-gallery">Design</h1>
+            </div>
+            <div
+              class="md:w-[30vw] w-[40vw] md:h-[19vw] h-[40vw] bg-[#b2b2b2] rounded-[50%] md:rounded-[300px] overflow-hidden flex justify-center"
+            >
+              <video
+                loop
+                autoplay
+                muted
+                preload="none"
+                loading="lazy"
+                class="object-cover md:w-[65%] w-[85%] h-full"
+              >
+                <source src="./assets/vid (1).mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+        <!-- Line -->
+        <div
+          class="bg-transparent h-[2px] w-[90%] lg:mt-[2vw] lg:mb-0 my-[6vw] mx-auto overflow-hidden"
+        >
+          <div
+            class="line1 w-[100%] translate-x-[100%] h-[.1rem] bg-[#121212]"
+          ></div>
+        </div>
+        <!-- Text -->
+        <div
+          class="w-full lg:flex-row flex flex-col items-start justify-end gap-[3vw] font-mlight py-[3vw] px-[5vw]"
+        >
+          <h4
+            class="lg:text-[1vw] text-[3vw] font-semibold leading-[3vw] select-none lg:mb-0 mb-[5vw]"
+          >
+            CREATIVE DESIGN
+          </h4>
+          <div class="text2 selection:text-[#ffffff] selection:bg-[#8a8a8a]">
+            <div class="overflow-hidden" id="designText1">
+              <h1
+                class="lg:text-[2vw] text-[5vw] font-[600] translate-y-[120%] rotate-3"
+              >
+                Web design that eschews cookie-cutter solutions.
+              </h1>
+            </div>
+            <div class="overflow-hidden" id="designText2">
+              <h1
+                class="lg:text-[2vw] text-[5vw] font-[600] translate-y-[120%] rotate-3"
+              >
+                My user-centered approach prioritizes productivity
+              </h1>
+            </div>
+            <div class="overflow-hidden" id="designText3">
+              <h1
+                class="lg:text-[2vw] text-[5vw] font-[600] translate-y-[110%] rotate-3"
+              >
+                and fosters meaningful engagement.
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technologies Section -->
+      <section class="w-full pt-[10vw]">
+        <!-- Heading + Progress Bar -->
+        <div class="pb-[5vw] px-[5vw] flex flex-col items-end">
+          <div class="flex w-[100%] justify-end">
+            <h1
+              class="text-[6vw] font-mlight uppercase selection:text-[#E0FD60] selection:bg-transparent"
+            >
+              Smart Development
+            </h1>
+          </div>
+          <!-- Line -->
+          <div
+            class="bg-transparent h-[2px] w-[100%] mt-[2vw] mx-auto overflow-hidden"
+          >
+            <div
+              class="line3 w-[100%] translate-x-[100%] h-[.1rem] bg-[#FFFFFF]"
+            ></div>
+          </div>
+        </div>
+        <!-- Video + Text -->
+        <div class="flex flex-col md:flex-row p-[5vw] w-full bg-[#141517]">
+          <div
+            class="w-[50%] flex md:justify-end justify-start items-start md:px-[10vw] px-[0vw] py-0 md:mt-0 mt-[10vw]"
+          >
+            <video
+              loop
+              autoplay
+              muted
+              class="md:w-[10vw] w-[30vw] md:translate-y-[-40%] mix-blend-screen relative z-[100]"
+            >
+              <source
+                src="https://cdn.cuberto.com/cb/hello/brandreel/1.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <!-- Text -->
+          <div class="md:w-[50%] w-[100%]">
+            <div class="text3">
+              <div
+                class="overflow-hidden selection:text-[#ffffff] selection:bg-transparent"
+                id="devText1"
+              >
+                <h1
+                  class="text-[#E0FD60] text-[7vw] font-light font-mlight md:text-[2.8vw] md:leading-[3.5vw] md:font-[600] rotate-3 translate-y-[113%]"
+                >
+                  I THINK AND SPEAK MAINLY IN
+                </h1>
+              </div>
+              <div
+                class="overflow-hidden selection:text-[#E0FD60] selection:bg-transparent"
+                id="devText2"
+              >
+                <h1
+                  class="text-[7vw] font-light font-mlight md:text-[2.8vw] md:leading-[3.5vw] md:font-[600] rotate-3 translate-y-[111%]"
+                >
+                  NODE, REACT, NEXT, TAILWIND.
+                </h1>
+              </div>
+              <div
+                class="overflow-hidden selection:text-[#E0FD60] selection:bg-transparent"
+                id="devText3"
+              >
+                <h1
+                  class="text-[7vw] font-light font-mlight md:text-[2.8vw] md:leading-[3.5vw] md:font-[600] rotate-3 translate-y-[114%]"
+                >
+                  THAT’S EVERYTHING YOU NEED!
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Image Slider -->
+        <div class="md:mt-0 my-[10vw] mt-[20vw] bg-[#141517]">
+          <div class="wrapper md:mt-[2rem] mt-0">
+            <div class="itemLeft item1 w-[40px] md:w-[80px]">
+              <img
+                class="object-cover"
+                src="./assets/icons8-css-64 (1).webp"
+                alt=""
+              />
+            </div>
+            <div class="itemLeft item5 w-[40px] md:w-[60px] flex items-center">
+              <img
+                class="object-cover"
+                src="./assets/icons8-javascript-64 (1).webp"
+                alt=""
+              />
+            </div>
+            <div class="itemLeft item3 w-[40px] md:w-[80px]">
+              <img class="object-cover" src="./assets/web.webp" alt="" />
+            </div>
+            <div class="itemLeft item4 w-[40px] md:w-[80px]">
+              <img
+                class="object-cover"
+                src="./assets/icons8-tailwindcss-64.webp"
+                alt=""
+              />
+            </div>
+            <div class="itemLeft item6 w-[40px] md:w-[80px]">
+              <img
+                class="object-cover"
+                src="./assets/icons8-react-a-javascript-library-for-building-user-interfaces-64.webp"
+                alt=""
+              />
+            </div>
+            <div class="itemLeft item7 w-[40px] md:w-[52px]">
+              <img
+                class="object-cover"
+                src="./assets/icons8-html-64 (1).webp"
+                alt=""
+              />
+            </div>
+            <div class="itemLeft item8 w-[40px] md:w-[80px]">
+              <img class="object-cover" src="./assets/monog.webp" alt="" />
+            </div>
+            <div class="itemLeft item2 w-[40px] md:w-[80px]">
+              <img
+                class="object-cover"
+                src="./assets/icons8-bootstrap-64 (2).webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="wrapper md:mt-[2rem] mt-0 mb-[26vw] sm:mb-0">
+            <div class="itemRight item1 w-[40px] md:w-[80px]">
+              <img
+                class="object-cover"
+                src="./assets/icons8-nodejs-64.webp"
+                alt=""
+              />
+            </div>
+            <div class="itemRight item2 w-[40px] md:w-[80px] bg-[#141517]">
+              <img
+                class="object-cover mix-blend-screen relative z-[100]"
+                src="./assets/icons8-express-js-64 copy.webp"
+                alt=""
+              />
+            </div>
+            <div class="itemRight item8 w-[40px] md:w-[80px]">
+              <img
+                class="object-cover"
+                src="./assets/icons8-tailwindcss-64.webp"
+                alt=""
+              />
+            </div>
+            <div class="itemRight item6 w-[40px] md:w-[80px]">
+              <img class="object-cover" src="./assets/web.webp" alt="" />
+            </div>
+            <div class="itemRight item3 w-[40px] md:w-[80px]">
+              <img class="object-cover" src="./assets/gsap copy.webp" alt="" />
+            </div>
+            <div class="itemRight item4 w-[40px] md:w-[80px]">
+              <img class="object-cover" src="./assets/gtihub.webp" alt="" />
+            </div>
+            <div class="itemRight item5 w-[40px] md:w-[80px]">
+              <img class="object-cover" src="./assets/nextjs.webp" alt="" />
+            </div>
+            <div class="itemRight item7 w-[40px] md:w-[80px]">
+              <img
+                class="object-cover"
+                src="./assets/icons8-javascript-64 (1).webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section>
+        <div
+          class="flex flex-col p-[0_5vw_10vw] w-full justify-center items-center gap-[1.5vw] select-none"
+        >
+          <div
+            class="md:w-[80%] w-[100%] md:flex-row flex flex-col gap-[1vw] justify-center ser z-[1000] relative"
+          >
+            <div
+              class="md:w-[74%] w-[100%] relative overflow-hidden md:rounded-[40px] rounded-[10px]"
+            >
+              <!-- Inside Image Text -->
+              <div
+                class="absolute md:top-[3vw] top-[8vw] md:left-[2.5vw] left-[6.5vw] text-[#121212] font-mlight flex flex-col md:gap-[1vw] gap-[5vw] z-[10000]"
+                data-scroll
+                data-scroll-speed="-1"
+              >
+                <h1
+                  class="md:text-[2.5vw] text-[7vw] leading-[7vw] md:font-[600] md:leading-[3vw]"
+                >
+                  FRONTEND <br />
+                  DEVELOPMENT
+                </h1>
+                <div class="flex gap-[.7rem]">
+                  <h4
+                    class="border-[#121212] border w-fit md:p-[.1vw_.7vw] p-[1vw_3vw] rounded-[20px] md:text-[1.2vw] text-[3.2vw] md:font-[600]"
+                  >
+                    WEB
+                  </h4>
+                  <h4
+                    class="border-[#121212] border w-fit md:p-[.1vw_.7vw] p-[1vw_3vw] rounded-[20px] md:text-[1.2vw] text-[3.2vw] md:font-[600]"
+                  >
+                    PLATFROMS
+                  </h4>
+                </div>
+              </div>
+              <img
+                data-scroll
+                data-scroll-speed="-1.3"
+                class="md:rounded-[40px] rounded-[10px]"
+                src="./assets/2 (1).webp"
+                alt=""
+              />
+            </div>
+            <div
+              class="md:w-[74%] w-[100%] relative overflow-hidden md:rounded-[40px] rounded-[10px]"
+            >
+              <!-- Indide Image Text -->
+              <div
+                class="absolute md:top-[3vw] top-[8vw] md:left-[2.5vw] left-[6.5vw] text-[#ffffff] font-mlight flex flex-col md:gap-[1vw] gap-[5vw] z-[10000]"
+                data-scroll
+                data-scroll-speed="-1"
+              >
+                <h1
+                  class="md:text-[2.5vw] text-[7vw] leading-[7vw] md:font-[600] md:leading-[3vw]"
+                >
+                  BACKEND <br />
+                  DEVELOPMENT
+                </h1>
+                <div class="flex gap-[.7rem]">
+                  <h4
+                    class="border-[#ffffff] border w-fit md:p-[.1vw_.7vw] p-[1vw_3vw] rounded-[20px] md:text-[1.2vw] text-[3.2vw] md:font-[600]"
+                  >
+                    ARCHITECTURE
+                  </h4>
+                  <h4
+                    class="border-[#ffffff] border w-fit md:p-[.1vw_.7vw] p-[1vw_3vw] rounded-[20px] md:text-[1.2vw] text-[3.2vw] md:font-[600]"
+                  >
+                    DATABASE
+                  </h4>
+                </div>
+              </div>
+              <img
+                data-scroll
+                data-scroll-speed="-1.3"
+                class="md:rounded-[40px] rounded-[10px]"
+                src="./assets/4.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="md:w-[80%] w-[100%] md:flex-row flex flex-col gap-[1.5vw] ser z-[1000] relative"
+          >
+            <div
+              class="md:w-[74%] w-[100%] relative overflow-hidden md:rounded-[40px] rounded-[10px]"
+            >
+              <!-- Indide Image Text -->
+              <div
+                class="absolute md:top-[3vw] top-[8vw] md:left-[2.5vw] left-[6.5vw] text-[#121212] font-mlight flex flex-col md:gap-[1vw] gap-[5vw] z-[10000]"
+                data-scroll
+                data-scroll-speed="-1"
+              >
+                <h1
+                  class="md:text-[2.5vw] text-[7vw] leading-[7vw] md:font-[600] md:leading-[3vw]"
+                >
+                  RESPONSIVE <br />
+                  DESIGN
+                </h1>
+                <div class="flex gap-[.7rem]">
+                  <h4
+                    class="border-[#121212] border w-fit md:p-[.1vw_.7vw] p-[1vw_3vw] rounded-[20px] md:text-[1.2vw] text-[3.2vw] md:font-[600] uppercase"
+                  >
+                    adaptive
+                  </h4>
+                  <h4
+                    class="border-[#121212] border w-fit md:p-[.1vw_.7vw] p-[1vw_3vw] rounded-[20px] md:text-[1.2vw] text-[3.2vw] md:font-[600] uppercase"
+                  >
+                    structured
+                  </h4>
+                </div>
+              </div>
+              <img
+                data-scroll
+                data-scroll-speed="-1.3"
+                class="md:rounded-[40px] rounded-[10px]"
+                src="./assets/1.webp"
+                alt=""
+              />
+            </div>
+            <div
+              class="md:w-[74%] w-[100%] relative overflow-hidden md:rounded-[40px] rounded-[10px]"
+            >
+              <!-- Indide Image Text -->
+              <div
+                class="absolute md:top-[3vw] top-[8vw] md:left-[2.5vw] left-[6.5vw] text-[#121212] font-mlight flex flex-col md:gap-[1vw] gap-[5vw] z-[10000]"
+                data-scroll
+                data-scroll-speed="-1"
+              >
+                <h1
+                  class="md:text-[2.5vw] text-[7vw] leading-[7vw] md:font-[600] md:leading-[3vw]"
+                >
+                  WEBSITE <br />
+                  OPTIMIZING
+                </h1>
+                <div class="flex gap-[.7rem]">
+                  <h4
+                    class="border-[#121212] border w-fit md:p-[.1vw_.7vw] p-[1vw_3vw] rounded-[20px] md:text-[1.2vw] text-[3.2vw] md:font-[600] uppercase"
+                  >
+                    functionality
+                  </h4>
+                  <h4
+                    class="border-[#121212] border w-fit md:p-[.1vw_.7vw] p-[1vw_3vw] rounded-[20px] md:text-[1.2vw] text-[3.2vw] md:font-[600]"
+                  >
+                    FAST
+                  </h4>
+                </div>
+              </div>
+              <img
+                data-scroll
+                data-scroll-speed="-1.3"
+                class="md:rounded-[40px] rounded-[10px]"
+                src="./assets/3 (1).webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Philosophy Section -->
+      <section
+        id="phy"
+        class="w-full bg-[#8F8F8F] text-[#121212] md:py-[8vw] pt-[20vw] pb-[15vw] overflow-hidden"
+      >
+        <div
+          class="w-full flex items-center justify-start px-[5vw] gap-[4.5vw]"
+        >
+          <div class="flex gap-[4.5vw] items-center select-none">
+            <div
+              class="uppercase md:text-[12vw] text-[15vw] md:leading-[11vw] leading-[15vw] font-mlight text4"
+            >
+              <div class="overflow-hidden" id="philosophyText1">
+                <h1 class="font-gallery translate-y-[100%]">MY</h1>
+              </div>
+              <div class="overflow-hidden" id="philosophyText2">
+                <h1 class="flex items-center justify-center translate-y-[100%]">
+                  PHILOS
+                  <div
+                    class="bg-[#ffffff] md:w-[9vw] w-[12vw] md:h-[9vw] h-[12vw] rounded-[50%] overflow-hidden p-[1.5vw] scale-75 phyVideo opacity-0"
+                  >
+                    <video muted loop autoplay>
+                      <source
+                        src="https://cdn.cuberto.com/cb/icons/2.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                  PHY
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Line -->
+        <div
+          class="bg-transparent h-[2px] w-[90%] md:mt-[2vw] md:my-0 my-[6vw] mx-auto overflow-hidden"
+        >
+          <div
+            class="line4 w-[100%] translate-x-[100%] h-[.1rem] bg-[#121212]"
+          ></div>
+        </div>
+        <!-- Text -->
+        <div
+          class="w-full md:flex-row flex flex-col items-start justify-end gap-[3vw] font-mlight py-[3vw]"
+        >
+          <h4
+            class="md:text-[1vw] text-[3vw] font-semibold md:leading-[3vw] md:px-0 px-[5vw] leading-[3vw] select-none"
+          >
+            MY PHILOSOPHY
+          </h4>
+          <div
+            class="md:text-[2vw] text-[5vw] md:w-[50.6%] w-full font-[600] md:pr-[5vw] md:px-0 px-[5vw] text5 selection:text-[#ffffff]"
+          >
+            <div class="overflow-hidden" id="philosophyPara1">
+              <h2 class="translate-y-[140%] rotate-3">
+                In the phase of working, I think of myself as a
+              </h2>
+            </div>
+            <div class="overflow-hidden" id="philosophyPara2">
+              <h2 class="translate-y-[130%] rotate-3">
+                designer, strategist and analyst. I doesn't do
+              </h2>
+            </div>
+            <div class="overflow-hidden" id="philosophyPara3">
+              <h2 class="translate-y-[130%] rotate-3">
+                cookie-cutter solutions and i build products
+              </h2>
+            </div>
+            <div class="overflow-hidden" id="philosophyPara4">
+              <h2 class="translate-y-[120%] rotate-3">
+                exactly as design phase, no short cuts or simplifications.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer
+        class="w-full footerBG text-[#ffffff] md:pt-[8vw] md:py-[0vw] pt-[20vw] pb-[15vw] overflow-hidden"
+      >
+        <!-- Text -->
+        <div
+          class="flex gap-[4vw] uppercase md:text-[12vw] text-[16vw] md:leading-[12vw] leading-[16vw] font-mlight px-[5vw] text6"
+        >
+          <div class="overflow-hidden select-none" id="footerText1">
+            <h1
+              class="flex items-center justify-center font-gallery translate-y-[100%]"
+            >
+              FOLL
+              <div
+                class="bg-[#ffffff] md:w-[9vw] w-[12vw] md:h-[9vw] h-[12vw] rounded-[50%] overflow-hidden p-[1.5vw] translate-y-[-.5vw] opacity-0 scale-75 footerVideo"
+              >
+                <video muted loop autoplay>
+                  <source
+                    src="https://cdn.cuberto.com/cb/icons/1.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              W
+            </h1>
+          </div>
+          <div class="overflow-hidden" id="footerText2">
+            <h1 class="translate-y-[100%]">ME</h1>
+          </div>
+        </div>
+        <div class="px-[5vw] md:py-0 pt-[10vw] pb-[7vw]">
+          <h1
+            class="uppercase font-mlight font-[600] relative bottom-[-3vw] select-none"
+          >
+            SOCIAL MEDIA AND CONTACTS
+          </h1>
+        </div>
+        <!-- Social Links -->
+        <div class="w-full font-mori py-[5vw]">
+          <div
+            class="w-full flex justify-between items-center p-[2.5vw_5vw] md:text-[2vw] text-[4vw] border-y-[#8080804f] border border-x-0 relative group"
+          >
+            <a
+              href="https://wa.me/+923150676136?text=Hi%20i%20am%20ASAD%20your%20web%20developer.%20How%20can%20i%20help%20you%20today?"
+              target="_blank"
+              class="w-full h-0 bg-[#E0FD60] text-[#000000] font-[600] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-0 duration-500 text-[2vw] group-hover:h-full group-hover:p-[2.5vw_5vw] group"
+            >
+            </a>
+            <a
+              href="https://wa.me/+923150676136?text=Hi%20i%20am%20ASAD%20your%20web%20developer.%20How%20can%20i%20help%20you%20today?"
+              target="_blank"
+              class="flex justify-between items-center w-full overflow-hidden"
+              ><h1
+                class="z-[50] group-hover:text-[#121212] group-hover:font-[600] opacity-0 footer-links translate-y-[40px]"
+              >
+                WHATSAPP
+              </h1>
+              <span class="z-[50] group-hover:text-[#121212]"
+                ><svg
+                  class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-miterlimit="10"
+                      d="M17.657 6.343L6.343 17.657"
+                    />
+                    <path
+                      stroke-linejoin="round"
+                      d="M18.101 16.733V7.437A1.53 1.53 0 0 0 16.563 5.9H7.267"
+                    />
+                  </g></svg></span
+            ></a>
+          </div>
+          <div
+            class="w-full flex justify-between items-center p-[2.5vw_5vw] md:text-[2vw] text-[4vw] border-y-[#8080804f] border border-x-0 relative group"
+          >
+            <a
+              href="https://instagram.com/asad.code"
+              target="_blank"
+              class="2 w-full h-0 bg-[#E0FD60] text-[#000000] font-[600] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-0 duration-500 flex justify-between text-[2vw] group-hover:h-full group-hover:p-[2.5vw_5vw]"
+            >
+            </a>
+            <a
+              href="https://instagram.com/asad.code"
+              target="_blank"
+              class="flex justify-between items-center w-full overflow-hidden"
+              ><h1
+                class="z-[50] group-hover:text-[#121212] group-hover:font-[600] opacity-0 footer-links translate-y-[40px]"
+              >
+                INSTAGRAM
+              </h1>
+              <span class="z-[50] group-hover:text-[#121212]"
+                ><svg
+                  class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-miterlimit="10"
+                      d="M17.657 6.343L6.343 17.657"
+                    />
+                    <path
+                      stroke-linejoin="round"
+                      d="M18.101 16.733V7.437A1.53 1.53 0 0 0 16.563 5.9H7.267"
+                    />
+                  </g></svg></span
+            ></a>
+          </div>
+          <div
+            class="w-full flex justify-between items-center p-[2.5vw_5vw] md:text-[2vw] text-[4vw] border-y-[#8080804f] border border-x-0 relative group"
+          >
+            <a
+              href="https://www.facebook.com/asadmughal7424?mibextid=ZbWKwL"
+              target="_blank"
+              class="w-full h-0 bg-[#E0FD60] text-[#000000] font-[600] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-0 duration-500 flex justify-between text-[2vw] group-hover:h-full group-hover:p-[2.5vw_5vw]"
+            >
+            </a>
+            <a
+              href="https://www.facebook.com/asadmughal7424?mibextid=ZbWKwL"
+              target="_blank"
+              class="flex items-center justify-between w-full overflow-hidden"
+              ><h1
+                class="z-[50] group-hover:text-[#121212] group-hover:font-[600] opacity-0 footer-links translate-y-[40px]"
+              >
+                FACEBOOK
+              </h1>
+              <span class="z-[50] group-hover:text-[#121212]"
+                ><svg
+                  class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-miterlimit="10"
+                      d="M17.657 6.343L6.343 17.657"
+                    />
+                    <path
+                      stroke-linejoin="round"
+                      d="M18.101 16.733V7.437A1.53 1.53 0 0 0 16.563 5.9H7.267"
+                    />
+                  </g></svg></span
+            ></a>
+          </div>
+          <div
+            class="w-full flex justify-between items-center p-[2.5vw_5vw] md:text-[2vw] text-[4vw] border-y-[#8080804f] border border-x-0 relative group"
+          >
+            <a
+              href="https://www.linkedin.com/in/asad-code"
+              target="_blank"
+              class="w-full h-0 bg-[#E0FD60] text-[#000000] font-[600] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-0 duration-500 flex justify-between text-[2vw] group-hover:h-full group-hover:p-[2.5vw_5vw]"
+            >
+            </a>
+            <a
+              href="https://www.linkedin.com/in/asad-code"
+              target="_blank"
+              class="flex items-center justify-between w-full overflow-hidden"
+              ><h1
+                class="z-[50] group-hover:text-[#121212] group-hover:font-[600] opacity-0 footer-links translate-y-[40px]"
+              >
+                LINKEDIN
+              </h1>
+              <span class="z-[50] group-hover:text-[#121212]"
+                ><svg
+                  class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-miterlimit="10"
+                      d="M17.657 6.343L6.343 17.657"
+                    />
+                    <path
+                      stroke-linejoin="round"
+                      d="M18.101 16.733V7.437A1.53 1.53 0 0 0 16.563 5.9H7.267"
+                    />
+                  </g></svg
+              ></span>
+            </a>
+          </div>
+          <div
+            class="w-full flex justify-between items-center p-[2.5vw_5vw] md:text-[2vw] text-[4vw] border-y-[#8080804f] border border-x-0 relative group"
+          >
+            <a
+              href="https://github.com/asadc0de"
+              target="_blank"
+              class="link w-full h-0 bg-[#E0FD60] text-[#000000] font-[600] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-0 duration-500 flex justify-between text-[2vw] group-hover:h-full group-hover:p-[2.5vw_5vw]"
+            >
+            </a>
+            <a
+              href="https://github.com/asadc0de"
+              target="_blank"
+              class="flex items-center justify-between w-full overflow-hidden"
+              ><h1
+                class="z-[50] group-hover:text-[#121212] group-hover:font-[600] opacity-0 footer-links translate-y-[40px]"
+              >
+                GITHUB
+              </h1>
+              <span class="z-[50] group-hover:text-[#121212]"
+                ><svg
+                  class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-miterlimit="10"
+                      d="M17.657 6.343L6.343 17.657"
+                    />
+                    <path
+                      stroke-linejoin="round"
+                      d="M18.101 16.733V7.437A1.53 1.53 0 0 0 16.563 5.9H7.267"
+                    />
+                  </g></svg
+              ></span>
+            </a>
+          </div>
+          <div
+            class="w-full flex justify-between items-center p-[2.5vw_5vw] md:text-[2vw] text-[4vw] border-y-[#8080804f] border border-x-0 relative group"
+          >
+            <a
+              href="mailto:mughalasad449@gmail.com"
+              target="_blank"
+              class="link w-full h-0 bg-[#E0FD60] text-[#000000] font-[600] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-0 duration-500 flex justify-between text-[2vw] group-hover:h-full group-hover:p-[2.5vw_5vw]"
+            >
+            </a>
+            <a
+              href="mailto:mughalasad449@gmail.com"
+              target="_blank"
+              class="flex items-center justify-between w-full overflow-hidden"
+              ><h1
+                class="z-[50] group-hover:text-[#121212] group-hover:font-[600] opacity-0 footer-links translate-y-[40px]"
+              >
+                @EMAIL
+              </h1>
+              <span class="z-[50] group-hover:text-[#121212]"
+                ><svg
+                  class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-miterlimit="10"
+                      d="M17.657 6.343L6.343 17.657"
+                    />
+                    <path
+                      stroke-linejoin="round"
+                      d="M18.101 16.733V7.437A1.53 1.53 0 0 0 16.563 5.9H7.267"
+                    />
+                  </g></svg
+              ></span>
+            </a>
+          </div>
+        </div>
+        <!-- Video -->
+        <div
+          class="w-full md:mt-[2vw] mt-[20vw] p-[3vw_5vw_0vw_5vw] font-mlight flex flex-col justify-center items-center text7 select-none relative z-[1]"
+        >
+          <!-- Bg Video -->
+          <div
+            class="footer-video absolute w-full flex justify-center top-0 left-0 z-[-1] brightness-[.4]"
+          >
+            <video class="object-cover w-[100%] md:w-[37%]" loop autoplay muted>
+              <source src="./assets/footerVideo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <!-- Text + Animation -->
+          <div
+            id="footerHeading1"
+            class="md:text-[10vw] text-[15vw] md:leading-[9vw] leading-[15vw] font-gallery overflow-hidden"
+          >
+            <h1 class="translate-y-[100%]">WANT</h1>
+          </div>
+          <div
+            id="footerHeading2"
+            class="md:text-[10vw] text-[14vw] md:leading-[9vw] leading-[15vw] overflow-hidden md:my-0 my-[4vw]"
+          >
+            <h1 class="translate-y-[100%]">A WEBSITE ?</h1>
+          </div>
+          <!-- Text Animation -->
+          <div
+            id="animateme2"
+            class="scale-[1] flex justify-center w-full px-[10vw] text9"
+          >
+            <div id="animateme" class="scale-[1] select-none">
+              <div
+                class="overflow-hidden relative text-[#E0FD60] font-gallery border-[#E0FD60] border rounded-[8rem] md:px-[18.5vw] px-[30vw] md:py-[4.5vw] py-[6.5vw] w-fit after:w-full after:h-full after:bg-[#E0FD60] after:absolute after:left-0 after:bottom-[-100%] after:rounded-[50%] hover:after:bottom-[0%] hover:after:rounded-[0px] after:duration-500 after:z-[-10] after:ease-in-out z-[10] cursor-default group"
+              >
+                <div
+                  class="absolute md:top-[1%] top-[-6%] left-[4.5%] md:group-hover:top-[-112%] group-hover:top-[-128%] duration-500"
+                >
+                  <h1
+                    class="Create md:text-[10vw] md:leading-[10vw] text-[16vw] leading-[16vw]"
+                  >
+                    TELL US
+                  </h1>
+                  <h1
+                    class="md:text-[10vw] md:leading-[10vw] text-[16vw] leading-[16vw] text-[#121212]"
+                  >
+                    TELL US
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Links -->
+          <div
+            class="w-full pt-[8vw] pb-[2vw] md:flex-row flex flex-col md:mt-0 mt-[20vw] md:mb-0 mb-[2vw] md:px-0 px-[10vw]"
+          >
+            <div
+              class="md:flex-row flex flex-col md:justify-center md:items-start items-center md:gap-[1vw] gap-[2.5vw] w-[100%] select-none"
+            >
+              <div
+                id="animateme3"
+                class="footerLastLinks scale-[1] flex justify-center"
+              >
+                <div
+                  class="overflow-hidden relative text-[#ffffff] font-mlight border-[#ffffff] border rounded-[8rem] w-fit md:py-[1vw] py-[3.5vw] md:px-[6.9vw] px-[20vw] after:w-full after:h-full after:bg-[#ffffff] after:absolute after:left-0 after:bottom-[-100%] after:rounded-[50%] hover:after:bottom-[0%] hover:after:rounded-[0px] after:duration-500 after:z-[-10] after:ease-in-out z-[10] cursor-default group"
+                >
+                  <div
+                    class="absolute md:top-[11.5%] top-[18%] left-[7.5%] md:group-hover:top-[-60%] group-hover:top-[-70%] duration-500"
+                  >
+                    <h1
+                      class="Create md:text-[1.5vw] text-[4.3vw] md:leading-[1.5vw] leading-[4.3vw] uppercase md:mb-0 mb-[2vw]"
+                    >
+                      contact@asad
+                    </h1>
+                    <h1
+                      class="md:text-[1.5vw] text-[4.3vw] md:leading-[1.5vw] leading-[4.3vw] text-[#121212] uppercase font-[600]"
+                    >
+                      contact@asad
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="animateme4"
+                class="footerLastLinks scale-[1] flex justify-center"
+              >
+                <div
+                  class="overflow-hidden relative text-[#ffffff] font-mlight border-[#ffffff] border rounded-[8rem] w-fit md:py-[1vw] py-[3.5vw] md:px-[6.9vw] px-[17vw] after:w-full after:h-full after:bg-[#ffffff] after:absolute after:left-0 after:bottom-[-100%] after:rounded-[50%] hover:after:bottom-[0%] hover:after:rounded-[0px] after:duration-500 after:z-[-10] after:ease-in-out z-[10] cursor-default group"
+                >
+                  <div
+                    class="absolute md:top-[11.5%] top-[18%] left-[7.5%] md:group-hover:top-[-60%] group-hover:top-[-70%] duration-500"
+                  >
+                    <h1
+                      class="Create md:text-[1.5vw] text-[4.3vw] md:leading-[1.5vw] leading-[4.3vw] uppercase md:mb-0 mb-[2vw]"
+                    >
+                      +923150676136
+                    </h1>
+                    <h1
+                      class="md:text-[1.5vw] text-[4.3vw] md:leading-[1.5vw] leading-[4.3vw] text-[#121212] uppercase font-[600]"
+                    >
+                      +923150676136
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Rights -->
+            <div
+              class="w-[100%] flex items-center justify-center md:mt-0 mt-[15vw] footerLastLinks"
+            >
+              <h3
+                class="md:text-[2vw] text-[3.5vw] selection:text-[#E0FD60] selection:bg-transparent"
+              >
+                All rights &copy; reserved to Asad Ali
+                <span class="date"></span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts & Cdns -->
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.140.0/three.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+    <script src="./utils/preLoader.js"></script>
+    <script src="./utils/locomotive.js"></script>
+    <script src="./app.js"></script>
+    <script src="./utils/navBar.js"></script>
+    <script src="./utils/mouseFollower.js"></script>
+    <script src="./utils/footer.js"></script>
+  </body>
+</html>

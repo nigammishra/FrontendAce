@@ -1,0 +1,313 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+@font-face {
+    font-family: 'Head';
+    src: url('./fonts/Rejouice-Headline.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Matter-Light';
+    src: url('./fonts/matter-light.woff2') format('woff2');
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Gallery';
+    src: url('./fonts/gallery-modern-regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mori';
+    src: url('./fonts/ppmori.woff2') format('woff2');
+    font-display: swap;
+}
+
+
+@keyframes animation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 4.5vw));
+    }
+}
+
+.creative-design {
+    animation-name: animation;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    display: flex;
+    gap: 4.5vw;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+}
+
+
+.wrapper {
+    width: 100%;
+    margin-inline: auto;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+@keyframes scrollRight {
+    to {
+        right: -200px;
+    }
+}
+
+.itemLeft,
+.itemRight {
+    border-radius: 6px;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+.itemLeft {
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+}
+
+.itemRight {
+    right: max(calc(200px * 8), calc(100% + 200px));
+    animation-name: scrollRight;
+}
+
+.item1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+
+
+/* --------------------------- */
+
+
+
+.wrapper1 {
+    margin-top: 2rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes scroll-Left {
+    to {
+        left: -30vw;
+    }
+}
+
+
+.wrapper1 .video1 {
+    width: 30vw;
+    height: 19vw;
+    background-color: #e11d48;
+    border-radius: 300px;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    border: 1px solid black;
+}
+
+.wrapper1 .text1 {
+    border: 1px solid black;
+    border-radius: 300px;
+    color: #121212;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+
+.wrapper1 .item-Left {
+    left: max(calc(30vw * 8), 100%);
+    animation-name: scroll-Left;
+}
+
+
+.wrapper1 .item-1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.wrapper1 .item-2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.wrapper1 .item-3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.wrapper1 .item-4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.wrapper1 .item-5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.wrapper1 .item-6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.wrapper1 .item-7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.wrapper1 .item-8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+/* ---------------------------- */
+
+@media screen and (max-width:500px) {
+
+    @keyframes scrollLeft {
+        to {
+            left: -130px;
+        }
+    }
+
+    @keyframes scrollRight {
+        to {
+            right: -130px;
+        }
+    }
+
+    .itemLeft {
+        left: max(calc(130px * 8), 100%);
+        animation-name: scrollLeft;
+    }
+
+    .itemRight {
+        right: max(calc(130px * 8), calc(100% + 130px));
+        animation-name: scrollRight;
+    }
+}
+
+
+.rotateSVG {
+    /* transform-origin: 100px 100px; */
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.sun-core {
+    fill: white;
+    animation: pulse 2s infinite;
+}
+
+
+
+.overlay.active {
+    top: 0;
+    border-radius: 0px;
+}
+
+
+
+
+
+
+@keyframes svgAnime {
+    0% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 148 10;
+    }
+
+    50% {
+        stroke-dasharray: 135 30;
+    }
+
+    100% {
+        stroke-dashoffset: 157;
+        stroke-dasharray: 148 10;
+    }
+}
+
+.svgAnime {
+    animation-name: svgAnime;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+.no-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 7000;
+}
